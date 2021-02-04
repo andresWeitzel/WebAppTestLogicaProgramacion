@@ -9,14 +9,17 @@ function onDragStart(event) {
     event
         .currentTarget
         .style
-        .backgroundColor = 'yellow';
+        .backgroundColor = '#D8D8D8';
 }
+
+//----------------------------------------------------------------------------------
 
 //Si no se esta arrastrnado  algun elemento
 function onDragOver(event) {
     event.preventDefault();
 }
 
+//----------------------------------------------------------------------------------
 //Funcion real para borrar el elemento que ya se movio draggable
 function onDrop(event) {
     const id = event
@@ -32,8 +35,28 @@ function onDrop(event) {
     //Añada nuestro elemento draggable al dropzone:
     dropzone.appendChild(draggableElement);
 
+    //info
+    elemento = dropzone;
+
+
     //Restablezca nuestro objeto dataTransfer:
     event
         .dataTransfer
         .clearData();
+}
+
+
+//----------------------------------------------------------------------------------
+
+function comprobacion() {
+
+    document.getElementById(a).innerHTML = elemento;
+    /*     if (data == 'html') {
+            alert('Respuesta Incorrecta');
+        }
+        if (data == 'css') {
+            alert('Respuesta Correcta');
+        } else {
+            alert('agsdavdy');
+        } */
 }

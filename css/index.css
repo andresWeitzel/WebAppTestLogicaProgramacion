@@ -1,5 +1,4 @@
 .example-parent {
-    border: 2px solid #DFA612;
     color: black;
     display: flex;
     font-family: sans-serif;
@@ -13,7 +12,8 @@
 }
 
 .example-draggable {
-    background-color: #4AAE9B;
+    background-color: #f5f5f5;
+    border: 2px solid #11100e;
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -21,7 +21,8 @@
 }
 
 .example-dropzone {
-    background-color: #6DB65B;
+    background-color: #9e9a9a98;
+    border: 2px solid #11100e;
     flex-basis: 100%;
     flex-grow: 1;
     padding: 10px;
