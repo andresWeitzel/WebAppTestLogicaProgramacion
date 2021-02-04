@@ -52,9 +52,14 @@
 
 </br>
 
-## Ejemplo de uso de la API Drag and Drop HTML
+## Ejemplos de uso de la API Drag and Drop HTML
 
 * Link: https://www.digitalocean.com/community/tutorials/js-drag-and-drop-vanilla-js-es
+* Link: https://html.spec.whatwg.org/multipage/dnd.html#dnd
+
+## API Drag and Drop HTML
+
+* Link: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
 
 </br>
