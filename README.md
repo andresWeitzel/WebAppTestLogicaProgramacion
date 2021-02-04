@@ -1,6 +1,6 @@
 # Web App Test Logica de Programación
 
-**Desarrollo de una aplicación Web con JS Vainilla y Bootstrap acerca de Test por Niveles de Lógica de Programación usando la API Drag and Drop HTML**
+**Desarrollo de una aplicación Web con JS Vainilla y Bootstrap acerca de Test por Niveles de Lógica de Programación usando la API Drag and Drop HTML y Web Animations**
 
 
 </br>
@@ -61,6 +61,10 @@
 
 * Link: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
+</br>
+
+## Usando Web Animations
+* Link: https://web-animations.github.io/web-animations-demos/#animate_css/
 
 </br>
 
