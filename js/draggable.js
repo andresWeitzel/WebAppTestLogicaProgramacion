@@ -20,11 +20,22 @@ function onDragOver(event) {
 }
 
 //----------------------------------------------------------------------------------
+//Array para los elementos 
+const elements = [];
+
 //Funcion real para borrar el elemento que ya se movio draggable
 function onDrop(event) {
+    //Almacenamos el id del elemento que se movio
     const id = event
         .dataTransfer
         .getData('text');
+
+
+    elements.push(id);
+
+    //primer elemento que se tranfirio al dataTransfer
+    document.getElementById("resultado").innerHTML = elements[0];
+
 
     //Seleccione nuestro elemento draggable con el id que recuperamos
     const draggableElement = document.getElementById(id);
@@ -40,23 +51,32 @@ function onDrop(event) {
 
 
     //Restablezca nuestro objeto dataTransfer:
-    event
-        .dataTransfer
-        .clearData();
+    /*  event
+         .dataTransfer
+         .clearData(); */
 }
-
 
 //----------------------------------------------------------------------------------
 
-function comprobacion() {
+function comprobacion(event) {
 
-    document.getElementById(a).innerHTML = elemento;
-    /*     if (data == 'html') {
-            alert('Respuesta Incorrecta');
-        }
-        if (data == 'css') {
-            alert('Respuesta Correcta');
-        } else {
-            alert('agsdavdy');
-        } */
+
+    var id = event
+        .dataTransfer
+        .getData('text');
+
+    if (elements[0] == 'html') {
+
+        document.getElementById("resultado").innerHTML = id;
+
+    } else if (id == 'css') {
+
+        document.getElementById("resultado").innerHTML = id;
+
+    } else {
+
+        document.getElementById("resultado").innerHTML = "Nada";
+
+    }
+
 }
